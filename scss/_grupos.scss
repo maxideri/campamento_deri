@@ -1,0 +1,47 @@
+
+/* ================ Grupos ==================== */
+@mixin displayFlexJustify ($flex-wrap, $justify) {
+    display: flex;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify;
+}
+
+.grupos{
+    @include displayFlexJustify(wrap,space-evenly);
+
+    &__grupo{
+        @include displayFlexJustify (wrap,center);
+        @include fondoImagenCentrada;
+        align-items: center;
+        margin: 5px;
+        padding: 10px;
+        width: 170px;
+        height: 280px;
+        border-radius: 5px;
+        @each $grupo in huemul, hualaHue, piuke, mahuida, hosseus, escuela {
+            &--#{$grupo} {
+                background-image: url(../imagenes/Galeria/#{$grupo}.jpg);
+            }
+        }
+
+        &:hover {
+            border: 1px solid rgba(255, 255, 255, 0.788);
+        }
+    }
+
+    h3 {
+        font-family: 'Bungee Inline', cursive;
+        font-size: 5em;
+        text-align: center;
+        color:yellow;
+        text-shadow:-2px 1px black;
+        padding: 5px;
+        line-height: 0.8;
+    }
+}
+
+/* ------- Clases bootstrap modificadas para los modales de los Grupos ----------*/
+.modal-content {
+    background-color:$color-naranja;
+    border-radius: 10px;
+}

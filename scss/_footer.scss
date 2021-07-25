@@ -1,0 +1,52 @@
+/* ============== Footer =============== */
+.footer {
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: space-around;
+    background-color:  #684A52;
+    padding: 5px;
+    text-align: center;
+
+    a, h4{
+        color:white;
+        font-size: 0.8em;
+        line-height: 2;
+        letter-spacing: 3px;
+        word-spacing: 3px;
+    }
+
+    div {
+        margin-bottom: 15px;
+    }
+}
+
+        
+.footer {
+
+    &__contacto {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+        img {
+            height:15px; 
+        }
+    }
+
+    &__redes {
+        img {
+            height: 40px;
+        }
+    }
+}
+
+/* ---------- Media queris -------- */
+@media only screen and (min-width: 768px){
+    .footer {
+        text-align: left;
+
+        div {
+            margin: 5px 0px 0px;
+        }
+    }
+}

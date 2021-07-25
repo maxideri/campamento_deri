@@ -1,0 +1,86 @@
+/* =================== Generales ======================= */
+/*---------- Reseteo ---------*/
+* { 
+    margin:0;
+    padding:0;
+}
+
+p {
+    margin:0;
+    padding: 0;
+}
+
+/* -------- Caracteristicas generales -----*/
+body {
+    font-family:'Lucida Sans','Roboto','Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+main{
+    padding: 70px 20px 10px;
+    background-color: #553D36;
+    text-align: justify;
+    color: white;
+    line-height: 2;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    flex:1;
+}
+
+h2 {
+    color: yellow;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+    &:hover {
+        color: yellow;
+    }
+}
+
+video, iframe {
+    border-radius: 20px;
+}
+
+.grid1Center {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-row-gap:20px;
+    grid-column-gap: 30px;
+    align-items: center;
+}
+
+/* ------ contacto wpp flotante ----- */
+.wpp {
+    position: fixed;
+    z-index: 10;
+    right: 6vh;
+    bottom: 6vh;
+}
+
+ /* ------- Media queris -------- */
+@media only screen and (min-height: 604px){
+    html, body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .wpp {
+        position: fixed;
+        z-index: 5;
+        right: 13vh;
+        bottom: 8vh;
+    }
+}

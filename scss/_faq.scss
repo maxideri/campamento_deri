@@ -1,0 +1,50 @@
+/* =================== FAQ =================== */
+.preguntas {
+    background-color:rgba(249, 102, 17, 0.61);
+    border-radius: 10px;
+    padding: 20px;
+    
+    div {
+        padding: 4px;
+    }
+
+    p a {
+        text-decoration: underline;
+    }
+
+    > div > a{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__preguntaDesplegable {
+        border-bottom: 2px solid white;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+}
+
+.btn:active {
+    border:0px;
+}
+
+/* --------- Media queris ------------ */
+@media only screen and (min-width: 992px){
+    .preguntas {
+        h3 {
+            margin: 0;
+            margin-right: 5px;
+        }
+
+        > div > a{
+            flex-direction: row;
+            align-items:center
+        }
+
+        &__preguntaDesplegable{
+            padding:10px;
+            text-align: left;
+        }
+    }
+}

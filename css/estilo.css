@@ -1,0 +1,665 @@
+/* ======= Variables ======== */
+/* -------- Colores principales ------- */
+/* ----- Imagen de fondo centrada --- */
+/* ================= Header ================== */
+.navbar {
+  background-color: #f96711;
+  border-bottom: 5px solid yellow;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar a {
+  text-shadow: 5px 5px 5px #553D36;
+  line-height: 2;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  padding: 0px 45px;
+}
+
+.navbar__seccionActiva {
+  color: yellow;
+}
+
+/* -------- Submenu desplegable ----------*/
+.subnav {
+  background-color: #f96711;
+  border: none;
+  border-bottom: 5px solid yellow;
+  z-index: 5;
+}
+
+/* -------- Clases bootstrap modificadas para el header ------*/
+.navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+/* --------- Media queris -------- */
+@media only screen and (min-width: 992px) {
+  .navbar {
+    -webkit-box-shadow: 5px 5px 20px black;
+            box-shadow: 5px 5px 20px black;
+    border-bottom: 5px solid yellow;
+  }
+  .navbar a {
+    font-weight: bold;
+  }
+  .subnav {
+    border-radius: 0px 0px 20px 20px;
+    padding: 0;
+    -webkit-box-shadow: 0px 20px 20px -5px black;
+            box-shadow: 0px 20px 20px -5px black;
+    border-bottom: 5px solid yellow;
+    z-index: 5;
+  }
+  .subnav li a {
+    display: block;
+    padding: 0px 11px;
+    text-align: center;
+  }
+}
+
+/* ====================== Index ================ */
+.bienvenida {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bienvenida__texto {
+  color: white;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+#videoBackground {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+  border-radius: 0;
+  padding: 0;
+}
+
+/* ================== Inicio ===================== */
+.carouselContent {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carouselContent h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive,'Abril Fatface', cursive;
+  font-size: 5em;
+  color: yellow;
+  text-shadow: 5px 5px 5px black;
+}
+
+.quienesSomos {
+  margin-top: 15px;
+}
+
+.quienesSomos__videoPromocional {
+  width: 100%;
+  height: auto;
+}
+
+/* ------- Clase bootstrap modificada ------- */
+.carousel {
+  margin: -70px -20px 0px;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-indicators {
+  z-index: 5;
+}
+
+/* ----------- Media queris -------- */
+@media only screen and (min-width: 768px) {
+  .quienesSomos {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .carouselContent h1 {
+    font-size: 9em;
+  }
+}
+
+/* ============ Galeria =========== */
+#fotos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-row-gap: 5px;
+}
+
+#fotos div {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+#fotos img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+#fotos img:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+#videos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-row-gap: 5px;
+}
+
+#videos iframe {
+  width: 100%;
+  height: 300px;
+}
+
+/* --------- Media queris --------- */
+@media only screen and (min-width: 576px) {
+  #fotos, #videos {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #fotos {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ================ Grupos ==================== */
+.grupos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.grupos__grupo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+  padding: 10px;
+  width: 170px;
+  height: 280px;
+  border-radius: 5px;
+}
+
+.grupos__grupo--huemul {
+  background-image: url(../imagenes/Galeria/huemul.jpg);
+}
+
+.grupos__grupo--hualaHue {
+  background-image: url(../imagenes/Galeria/hualaHue.jpg);
+}
+
+.grupos__grupo--piuke {
+  background-image: url(../imagenes/Galeria/piuke.jpg);
+}
+
+.grupos__grupo--mahuida {
+  background-image: url(../imagenes/Galeria/mahuida.jpg);
+}
+
+.grupos__grupo--hosseus {
+  background-image: url(../imagenes/Galeria/hosseus.jpg);
+}
+
+.grupos__grupo--escuela {
+  background-image: url(../imagenes/Galeria/escuela.jpg);
+}
+
+.grupos__grupo:hover {
+  border: 1px solid rgba(255, 255, 255, 0.788);
+}
+
+.grupos h3 {
+  font-family: 'Bungee Inline', cursive;
+  font-size: 5em;
+  text-align: center;
+  color: yellow;
+  text-shadow: -2px 1px black;
+  padding: 5px;
+  line-height: 0.8;
+}
+
+/* ------- Clases bootstrap modificadas para los modales de los Grupos ----------*/
+.modal-content {
+  background-color: #f96711;
+  border-radius: 10px;
+}
+
+/* =================== FAQ =================== */
+.preguntas {
+  background-color: rgba(249, 102, 17, 0.61);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.preguntas div {
+  padding: 4px;
+}
+
+.preguntas p a {
+  text-decoration: underline;
+}
+
+.preguntas > div > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.preguntas__preguntaDesplegable {
+  border-bottom: 2px solid white;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5px;
+}
+
+.btn:active {
+  border: 0px;
+}
+
+/* --------- Media queris ------------ */
+@media only screen and (min-width: 992px) {
+  .preguntas h3 {
+    margin: 0;
+    margin-right: 5px;
+  }
+  .preguntas > div > a {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .preguntas__preguntaDesplegable {
+    padding: 10px;
+    text-align: left;
+  }
+}
+
+/* ================ Sumate ================ */
+/* ---------- Ubicacion -----------*/
+.contacto img {
+  height: 25px;
+}
+
+.contacto iframe {
+  max-width: 100%;
+  height: 300px;
+}
+
+.contacto__ubicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+/* --------- Formulario ---------*/
+.formulario {
+  text-align: center;
+}
+
+.formulario form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0px 10px 10px;
+  padding: 10px;
+  border: dotted white;
+  border-radius: 10px;
+}
+
+.formulario input, .formulario select, .formulario textarea, .formulario button {
+  border: none;
+  border-radius: 8px;
+  width: 90%;
+}
+
+.formulario input, .formulario select {
+  margin: 5px;
+  border-radius: 8px;
+  height: 30px;
+}
+
+.formulario textarea {
+  height: 80px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.formulario__botonEnviar :hover {
+  background-color: #f96711;
+  color: yellow;
+}
+
+.formulario__botonEnviar :active {
+  background-color: yellow;
+  color: #f96711;
+}
+
+@media only screen and (min-height: 604px) {
+  .contacto {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contacto {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .formulario input, .formulario select, .formulario button {
+    width: 45%;
+  }
+  .formulario textarea {
+    height: 150px;
+    width: 95%;
+  }
+}
+
+/* ============== Footer =============== */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #684A52;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer a, .footer h4 {
+  color: white;
+  font-size: 0.8em;
+  line-height: 2;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+}
+
+.footer div {
+  margin-bottom: 15px;
+}
+
+.footer__contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+}
+
+.footer__contacto img {
+  height: 15px;
+}
+
+.footer__redes img {
+  height: 40px;
+}
+
+/* ---------- Media queris -------- */
+@media only screen and (min-width: 768px) {
+  .footer {
+    text-align: left;
+  }
+  .footer div {
+    margin: 5px 0px 0px;
+  }
+}
+
+.noEncontrado {
+  padding: 70px;
+  background-color: #f96711;
+  background-image: url(../imagenes/Logo-CAS.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.noEncontrado h1 {
+  text-align: center;
+}
+
+.noEncontrado h2 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.noEncontrado h2:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.bienvenida img, .navbar-brand img, .footer__redes img, .wpp img {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.escalarImg img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+/* =================== Generales ======================= */
+/*---------- Reseteo ---------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* -------- Caracteristicas generales -----*/
+body {
+  font-family: 'Lucida Sans','Roboto','Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  padding: 70px 20px 10px;
+  background-color: #553D36;
+  text-align: justify;
+  color: white;
+  line-height: 2;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+h2 {
+  color: yellow;
+  text-align: center;
+  padding: 20px 0px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: yellow;
+}
+
+video, iframe {
+  border-radius: 20px;
+}
+
+.grid1Center {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ------ contacto wpp flotante ----- */
+.wpp {
+  position: fixed;
+  z-index: 10;
+  right: 6vh;
+  bottom: 6vh;
+}
+
+/* ------- Media queris -------- */
+@media only screen and (min-height: 604px) {
+  html, body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .wpp {
+    position: fixed;
+    z-index: 5;
+    right: 13vh;
+    bottom: 8vh;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

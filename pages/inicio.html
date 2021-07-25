@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!--- Inicio SEO --->
+    <!--- Keywords --->
+    <meta name="keywords" content="campamento, bariloche, turdera, zona sur, saihueque">
+
+    <!--- Description --->
+    <meta name="description" content="Somos una comunidad que desde hace más de 30 años junta adolescentes para vivir un campamento en las montañas de Bariloche.">
+    <!--- Fin SEO --->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../imagenes/Logo CAS.svg">
+
+    <!-- animaciones de https://animate.style/ --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="../css/estilo.css" rel="stylesheet">
+    
+    <!--- Google fonts --->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-expand-lg navbar-light bg-light">
+            <div class="navbar">
+                <div class="escalarImg">
+                    <a class="navbar-brand" href="inicio.html">
+                        <img src="../imagenes/aguila.svg" alt="logo campamento andino saihueque">
+                    </a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a aria-current="page" href="inicio.html" class="navbar__seccionActiva">
+                                Inicio
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="grupos.html">Grupos</a>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Galería
+                            </a>
+                            <ul class="subnav dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a href="galeria.html#fotos">Fotos</a></li>
+                                <li><a href="galeria.html#videos">Audiovisuales</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        
+                        <li>
+                            <a href="contacto.html">Sumate</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!--- contacto wpp flotante --->
+        <div class="escalarImg wpp">
+            <a href="https://wa.link/sd5pua" target="_blank">
+            <img src="../iconos/wpp.svg" height="40px">
+            </a>
+        </div>
+        
+        <!--- Carrousel --->
+        <div class="carousel slide carousel-fade" id="carouselExampleIndicators" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" 
+                data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                </button>
+                
+                <button type="button" data-bs-target="#carouselExampleIndicators" 
+                data-bs-slide-to="1" aria-label="Slide 2">
+                </button>
+                
+                <button type="button" data-bs-target="#carouselExampleIndicators" 
+                data-bs-slide-to="2" aria-label="Slide 3">
+                </button>
+            </div>
+            
+            <div class="carousel-inner">
+                <div class="carouselContent animate__animated animate__fadeInDown animate__delay-1s">
+                    <h1>Campamento Andino Saihueque</h1>
+                </div>
+    
+                <div class="carousel-item active" 
+                style="background-image:url(../imagenes/car1.jpg);">
+                </div>
+    
+                <div class="carousel-item" 
+                style="background-image: url(../imagenes/car2.jpg);">
+                </div>
+    
+                <div class="carousel-item" 
+                style="background-image:url(../imagenes/car3.jpg);"></div>
+            </div>
+        </div>
+        
+        <!--- Cuerpo principal --->
+        <section class="quienesSomos grid1Center">
+            <div>
+                <h2>¿Quienes somos?</h2>
+                <p>Somos una comunidad sin fines de lucro que desde hace más de 30 años 
+                junta chicos y chicas, divididos en grupos de la misma edad. 
+                Nos juntamos a pasarla bien, charlar, conocer nueva personas, 
+                y nos organizamos para vivir un campamento en las montañas de Bariloche, 
+                dentro del Parque Nacional Nahuel Huapi. 
+                </p>
+            </div>
+
+            <div>  
+                <video class="quienesSomos__videoPromocional" alt="video de que es el campamento andino saihueque" controls muted autoplay loop preload="auto">
+                <source src="../videos/que_es.mp4" type="video/mp4">
+                Tu navegador no puede abrir el video
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <img src="../imagenes/Logo-CAS.svg" alt="logo campamento andino saihueque" height="120px">
+        </div>
+
+        <div class="footer__contacto">
+            <h4>Contacto</h4>
+            <a href="https://acortar.link/1rW3EG" target="_blank">
+            <img src="../iconos/ubicacion.svg" height="20px">
+            Padre Bruno 531 - Turdera - Buenos Aires (Argentina)
+            </a> 
+            
+            <a href="mailto:campamentocas@gmail.com" target="_blank">
+                <img src="../iconos/gmail.svg" alt="gmail cas" height="15px">
+                casayhueque@gmail.com
+            </a>
+        </div>
+
+        <div class="escalarImg footer__redes">
+            <h4>Nuestras redes</h4>
+            <a href="https://www.instagram.com/casayhueque/" target="_blank">
+            <img src="../iconos/044-instagram.png" alt="instagram cas">
+            </a>
+                
+            <a href="https://www.youtube.com/user/casayhueque/featured" target="_blank">
+            <img src="../iconos/youtube.svg" alt="youtube cas">
+            </a>
+                
+            <a href="https://www.facebook.com/campamento.cas" target="_blank">
+            <img src="../iconos/fb.svg" alt="facebook cas">
+            </a>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>
+

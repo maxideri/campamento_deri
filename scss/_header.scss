@@ -1,0 +1,71 @@
+/* ================= Header ================== */
+$borderAmarillo: 5px solid yellow;
+
+.navbar {
+    background-color: $color-naranja;
+    border-bottom: $borderAmarillo;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+
+    a {
+        text-shadow: 5px 5px 5px $color-marron;
+        line-height: 2;
+        letter-spacing: 3px;
+        word-spacing: 3px;
+        padding: 0px 45px;
+    }
+
+    &__seccionActiva {
+        color: yellow;
+    }
+}
+
+/* -------- Submenu desplegable ----------*/
+.subnav {
+    background-color:$color-naranja;
+    border: none;
+    border-bottom: $borderAmarillo;
+    z-index: 5;
+}
+
+/* -------- Clases bootstrap modificadas para el header ------*/
+.navbar {
+    &-collapse {
+    flex-grow: 0;
+    }
+    
+    &-toggler {
+    margin-right: 20px;
+    }
+    
+    &-brand img {
+    height: 30px;
+    }
+}
+
+/* --------- Media queris -------- */
+@media only screen and (min-width: 992px){
+    .navbar {
+        box-shadow: 5px 5px 20px black;
+        border-bottom: $borderAmarillo;
+
+        a {
+            font-weight: bold;
+        }
+    }
+
+    .subnav {
+        border-radius: 0px 0px 20px 20px;
+        padding: 0;
+        box-shadow: 0px 20px 20px -5px black;
+        border-bottom: $borderAmarillo;
+        z-index: 5;
+
+        li a{
+            display: block;
+            padding:0px 11px;
+            text-align: center;
+        }
+    }
+}

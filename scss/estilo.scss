@@ -1,0 +1,22 @@
+/* ======= Variables ======== */
+/* -------- Colores principales ------- */
+$color-naranja: #f96711;
+$color-marron:#553D36;
+
+/* ----- Imagen de fondo centrada --- */
+@mixin fondoImagenCentrada {
+    background-size: cover;
+    background-position: center;
+}
+
+@import "header";
+@import "index";
+@import "inicio";
+@import "galeria";
+@import "grupos";
+@import "faq";
+@import "sumate";
+@import "footer";
+@import "noEncontrado";
+@import "transformaciones";
+@import "generales";

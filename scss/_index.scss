@@ -1,0 +1,28 @@
+/* ====================== Index ================ */
+.bienvenida{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__texto {
+        color:white;
+        text-align: center;
+        margin-bottom: 10vh;;
+    }
+}
+
+#videoBackground {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+    border-radius: 0;
+    padding: 0;
+}

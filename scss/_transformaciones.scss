@@ -1,0 +1,12 @@
+
+$tiempo-transformacion: transform 0.3s;
+
+.bienvenida, .navbar-brand, .footer__redes, .wpp {
+    img {
+        transition: $tiempo-transformacion;
+    }
+}
+
+.escalarImg img:hover {
+    transform: scale(1.2,1.2);
+}

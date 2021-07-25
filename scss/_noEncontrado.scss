@@ -1,0 +1,23 @@
+.noEncontrado {
+    padding:70px;
+    background-color: $color-naranja;
+    background-image: url(../imagenes/Logo-CAS.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        transition: 0.5s;
+        &:hover {
+            transform: scale(1.1,1.1);
+        }
+    }
+}
