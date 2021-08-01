@@ -20,6 +20,8 @@
 
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+        <link rel="stylesheet" href="../lightbox2-2.11.3/dist/css/lightbox.min.css">
+
         <link href="../css/estilo.css" rel="stylesheet">
 
         <!--- Google fonts --->
@@ -94,22 +96,39 @@
             <h2>Galería</h2>
             <div id="fotos" class="animate__animated animate__fadeInUp animate__slow">
                 <div>
-                    <img src="../imagenes/Galeria/IMG-20200606-WA0049.jpg" alt="grupo de cas en la montaña">
+                    <a class="example-image-link" href="../imagenes/Galeria/IMG-20200606-WA0049.jpg" data-lightbox="example-set" data-title="Grupo Jakob en la Laguna Azul">
+                        <img class="example-image" src="../imagenes/Galeria/IMG-20200606-WA0049.jpg" alt="grupo de cas en la montaña"/>
+                    </a>
                 </div>
+
                 <div>
-                    <img src="../imagenes/Galeria/IMG-20200606-WA0067.jpg" alt="paisaje lago y montaña">
+                    <a class="example-image-link" href="../imagenes/Galeria/IMG-20200606-WA0067.jpg" data-lightbox="example-set" data-title="Laguna Jakob reflejando el cerro">
+                        <img class="example-image" src="../imagenes/Galeria/IMG-20200606-WA0067.jpg" alt="paisaje lago y montaña" />
+                    </a>
                 </div>
+
                 <div>
-                    <img src="../imagenes/Galeria/IMG-20200606-WA0060.jpg" alt="dos chicas sosteniendo bandera de grupo con lago de fondo">
+                    <a class="example-image-link" href="../imagenes/Galeria/IMG-20200606-WA0060.jpg" data-lightbox="example-set" data-title="Acampantes sosteniendo la bandera del grupo Jakob">
+                        <img class="example-image" src="../imagenes/Galeria/IMG-20200606-WA0060.jpg" alt="dos chicas sosteniendo bandera de grupo con lago de fondo" />
+                    </a>
                 </div>
+                
                 <div>
-                    <img src="../imagenes/Galeria/IMG-20200606-WA0092.jpg" alt="laguna azul">
+                    <a class="example-image-link" href="../imagenes/Galeria/IMG-20200606-WA0092.jpg" data-lightbox="example-set" data-title="Laguna Azul">
+                        <img class="example-image" src="../imagenes/Galeria/IMG-20200606-WA0092.jpg" alt="laguna azul" />
+                    </a>
                 </div>
+                
                 <div>
-                    <img src="../imagenes/Galeria/IMG-20200116-WA0309.jpg" alt="tres chicos en la mirada del doctor">
+                    <a class="example-image-link" href="../imagenes/Galeria/IMG-20200116-WA0309.jpg" data-lightbox="example-set" data-title="Tres acampantes en la Mirada del Doctor">
+                        <img class="example-image" src="../imagenes/Galeria/IMG-20200116-WA0309.jpg" alt="tres chicos en la mirada del doctor" />
+                    </a>
                 </div>
+                
                 <div>
-                    <img src="../imagenes/Galeria/E4 (14).jpg" alt="persona caminando sobre nieve">
+                    <a class="example-image-link" href="../imagenes/Galeria/E4 (14).jpg" data-lightbox="example-set" data-title="Acampante bordeando la Laguna Negra">
+                        <img class="example-image" src="../imagenes/Galeria/E4 (14).jpg" alt="persona caminando sobre nieve"/>
+                    </a>
                 </div>
             </div>
         </section>
@@ -171,5 +190,13 @@
     </footer>
 
 </body>
+<script src="./scripts/jquery-3.6.0.min.js"></script>
+<script src="../lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+<script>
+    lightbox.option({
+      "albumLabel": "Imagen %1 de %2",
+      "fitImagesInViewport": true
+    })
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </html>
