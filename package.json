@@ -1,18 +1,22 @@
 {
-  "name": "campamento_deri",
+  "name": "web-cas",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "node-sass": "^6.0.1",
-    "nodemon": "^2.0.9"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/estilo.scss css/estilo.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "purge": "purgecss --css css/estilo.css --content index.html, pages/*.html --output css/estiloRedu.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "lightbox2": "^2.11.3"
+  }
 }

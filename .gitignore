@@ -1,2 +1,4 @@
 # Ignora la carpeta node_modules
 node_modules
+css/estilo.css.map
+css/normalize.css
