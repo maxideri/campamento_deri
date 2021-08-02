@@ -10,9 +10,7 @@ $borderAmarillo: 5px solid yellow;
 
     a {
         text-shadow: 5px 5px 5px $color-marron;
-        line-height: 2;
-        letter-spacing: 3px;
-        word-spacing: 3px;
+        @include alturaEspaciados;
         padding: 0px 45px;
     }
 
@@ -48,7 +46,6 @@ $borderAmarillo: 5px solid yellow;
 @media only screen and (min-width: 992px){
     .navbar {
         box-shadow: 5px 5px 20px black;
-        border-bottom: $borderAmarillo;
 
         a {
             font-weight: bold;
@@ -59,8 +56,6 @@ $borderAmarillo: 5px solid yellow;
         border-radius: 0px 0px 20px 20px;
         padding: 0;
         box-shadow: 0px 20px 20px -5px black;
-        border-bottom: $borderAmarillo;
-        z-index: 5;
 
         li a{
             display: block;

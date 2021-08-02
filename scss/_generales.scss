@@ -18,12 +18,10 @@ body {
 
 main{
     padding: 70px 20px 10px;
-    background-color: #553D36;
+    background-color: $color-marron;
     text-align: justify;
     color: white;
-    line-height: 2;
-    letter-spacing: 3px;
-    word-spacing: 3px;
+    @include alturaEspaciados;
     flex:1;
 }
 
@@ -48,7 +46,7 @@ a {
 }
 
 video, iframe {
-    border-radius: 20px;
+    border-radius: 4*$radio;
 }
 
 .grid1Center {

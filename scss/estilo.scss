@@ -3,10 +3,27 @@
 $color-naranja: #f96711;
 $color-marron:#553D36;
 
+/* -------- Border Radius ------- */
+$radio: 5px;
+
 /* ----- Imagen de fondo centrada --- */
 @mixin fondoImagenCentrada {
     background-size: cover;
     background-position: center;
+}
+
+/* -------- Propiedades de Flex ------- */
+@mixin displayFlexJustify ($flex-wrap, $justify) {
+    display: flex;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify;
+}
+
+/* -------- Espaciado de lineas y caracteres ------- */
+@mixin alturaEspaciados {
+line-height: 2;
+letter-spacing: 3px;
+word-spacing: 3px;
 }
 
 @import "header";

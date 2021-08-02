@@ -1,11 +1,5 @@
 
 /* ================ Grupos ==================== */
-@mixin displayFlexJustify ($flex-wrap, $justify) {
-    display: flex;
-    flex-wrap: $flex-wrap;
-    justify-content: $justify;
-}
-
 .grupos{
     @include displayFlexJustify(wrap,space-evenly);
 
@@ -17,7 +11,7 @@
         padding: 10px;
         width: 170px;
         height: 280px;
-        border-radius: 5px;
+        border-radius: $radio;
         @each $grupo in huemul, hualaHue, piuke, mahuida, hosseus, escuela {
             &--#{$grupo} {
                 background-image: url(../imagenes/Galeria/#{$grupo}.jpg);
@@ -43,5 +37,5 @@
 /* ------- Clases bootstrap modificadas para los modales de los Grupos ----------*/
 .modal-content {
     background-color:$color-naranja;
-    border-radius: 10px;
+    border-radius: 2*$radio;
 }

@@ -27,18 +27,18 @@
         margin: 10px 0px 10px 10px;
         padding: 10px;
         border: dotted white;
-        border-radius: 10px;
+        border-radius: 2*$radio;
     }
 
     input, select, textarea, button {
         border: none;
-        border-radius: 8px;
+        border-radius: 1.5*$radio;
         width: 90%;
 
     }
     input, select {
         margin: 5px;
-        border-radius: 8px;
+        border-radius: 1.5*$radio;
         height: 30px;
     }
 
@@ -50,7 +50,6 @@
     }
 
     &__botonEnviar {
-
         :hover{
         background-color: $color-naranja;
         color: yellow;
@@ -62,11 +61,6 @@
         }
     }
 }
-
-
-
-
-
 
 @media only screen and (min-height: 604px){
     .contacto {
