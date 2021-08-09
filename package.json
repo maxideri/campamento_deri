@@ -16,6 +16,7 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.0.2",
     "lightbox2": "^2.11.3"
   }
