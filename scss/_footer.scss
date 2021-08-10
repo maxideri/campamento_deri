@@ -14,20 +14,24 @@ footer {
     div {
         margin-bottom: 15px;
     }
+
+
 }
 
-.contactoFooter {
-display: flex;
-flex-direction: column;
-width: 300px;
-    img {
-        height:15px; 
+.footer {
+    &__contacto {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+        img {
+            height:15px; 
+        }
     }
-}
 
-.redesFooter {
-    img {
-        height: 40px;
+    &__redes {
+        img {
+            height: 40px;
+        }
     }
 }
 

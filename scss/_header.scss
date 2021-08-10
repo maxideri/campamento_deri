@@ -17,28 +17,26 @@ $borderAmarillo: 5px solid yellow;
     &__seccionActiva {
         color: yellow;
     }
-}
 
-/* -------- Submenu desplegable ----------*/
-.subnav {
+    /* -------- Submenu desplegable ----------*/
+    &__subnav {
     background-color:$color-naranja;
     border: none;
     border-bottom: $borderAmarillo;
     z-index: 5;
-}
+    }
 
-/* -------- Clases bootstrap modificadas para el header ------*/
-.navbar {
+    /* -------- Clases bootstrap modificadas para el header ------*/
     &-collapse {
-    flex-grow: 0;
+        flex-grow: 0;
     }
     
     &-toggler {
-    margin-right: 20px;
+        margin-right: 20px;
     }
     
     &-brand img {
-    height: 30px;
+        height: 30px;
     }
 }
 
@@ -50,17 +48,17 @@ $borderAmarillo: 5px solid yellow;
         a {
             font-weight: bold;
         }
-    }
 
-    .subnav {
-        border-radius: 0px 0px 20px 20px;
-        padding: 0;
-        box-shadow: 0px 20px 20px -5px black;
-
-        li a{
-            display: block;
-            padding:0px 11px;
-            text-align: center;
+        &__subnav {
+            border-radius: 0px 0px 20px 20px;
+            padding: 0;
+            box-shadow: 0px 20px 20px -5px black;
+            
+            li a{
+                display: block;
+                padding:0px 11px;
+                text-align: center;
+            }
         }
     }
 }
