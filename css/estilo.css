@@ -2431,7 +2431,7 @@ footer div {
           transform: scale(1.1, 1.1);
 }
 
-.bienvenida img, .navbar-brand img, .redesFooter img, .wpp img {
+.bienvenida img, .navbar-brand img, .footer__redes img, .wpp img {
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
